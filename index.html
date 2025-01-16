@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Below link is enabling styles in out HTML document through styles.css file. Multiple css files can be imported same way. -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./assets/logo/Screenshot 2024-12-15 200119.png" />
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="page-container">
+    <img src="./assets/logo/wsa-logo.svg" />
+    <section class="calculator-section-container">
+      <h1>CALCULATOR</h1>
+      <div class="bg-cicle">
+        <div class="container">
+          <div class="display">
+            <input id="input" type="text" class="secondary-input" disabled />
+            <input id="screen" type="text" class="primary-input" disabled />
+          </div>
+
+          <div class="row row-first">
+            <button id="ce" class="btn btn-primary" onclick="backSpace()">
+              <img src="./assets/icons/delete.svg" width="40px" height="40px" />
+            </button>
+            <!-- btn-class added in class alternatively to btn class to not mount click event listner on particular button -->
+            <!-- Inline style will override class due to higher specificity -->
+            <button id="ce" class="btn-class btn-primary" onclick="clearExpression()" style="width: 100%">
+              CE
+            </button>
+            <button id="ac" class="btn btn-primary" onclick="screen.value='';input.value=''">
+              AC
+            </button>
+          </div>
+          <div class="row">
+            <button class="btn">(</button>
+            <button class="btn">)</button>
+            <button class="btn">^</button>
+
+            <button class="btn btn-primary">+/-</button>
+            <button class="btn btn-primary">√</button>
+          </div>
+
+          <div class="row">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn btn-primary">÷</button>
+            <button class="btn-class btn-primary" onclick="calculatePercentage()">
+              %
+            </button>
+          </div>
+
+          <div class="row">
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn btn-primary">×</button>
+            <button class="btn-class btn-primary" onclick="inverse()">
+              1/×
+            </button>
+          </div>
+
+          <div class="row">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn btn-primary">+</button>
+            <button class="btn-class btn-primary btn-equal" onclick="getResult()">
+              =
+            </button>
+          </div>
+
+          <div class="row">
+            <button class="btn btn-expanded">0</button>
+            <button class="btn">.</button>
+            <button class="btn btn-primary">-</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p class="copyright-text">© 2023 WSA. All Rights Reserved.</p>
+  </div>
+  <script src="./javascript/script2.js"></script>
+</body>
+
+</html>
