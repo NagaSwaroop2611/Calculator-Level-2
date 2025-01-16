@@ -128,7 +128,7 @@ body {
   font-family: Poppins;
 }
 
-/* @media (max-width: 1490px) {
+@media (max-width: 1490px) {
   .calculator-section-container > h1 {
     display: none;
   }
@@ -141,4 +141,4 @@ body {
   .bg-cicle {
     padding: 0;
   }
-} */
+}
