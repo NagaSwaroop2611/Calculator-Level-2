@@ -92,7 +92,7 @@ body {
 .row-first{
   grid-template-columns: repeat(3,1fr);
 }
-.btn,.btn-class {
+.btn {
   padding: 12px 0px;
   border: none;
   border-radius: 16px;
@@ -104,6 +104,15 @@ body {
   font-family: "Jost";
 }
 .btn-class {
+  padding: 12px 0px;
+  border: none;
+  border-radius: 16px;
+  font-size: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Jost";
   width: 90px;
 }
 .btn-primary {
