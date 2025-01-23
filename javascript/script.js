@@ -87,8 +87,9 @@ function clearExpression(){
 
 // To calculate the percentage
 const calculatePercentage = () => {
-  let result = returnEval(screen.value) / 100;
   input.value = `${screen.value}%`;
+  let result = returnEval(screen.value) / 100;
+  
   screen.value = result;
 };
 
